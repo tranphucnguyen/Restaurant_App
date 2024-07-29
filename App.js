@@ -35,7 +35,9 @@ export default function App() {
         <Tab.Screen name="Home" component={HomeScreen} options={{
           headerShown: false,
         }} />
-        <Tab.Screen name="Cart" component={CartScreen} />
+        <Tab.Screen name="Cart" component={CartScreen}options={{
+          headerShown: false,
+        }} />
         <Tab.Screen name="Inbox" component={InboxScreen} />
         <Tab.Screen name="Profile" component={ProfileScreen} />
       </Tab.Navigator>
