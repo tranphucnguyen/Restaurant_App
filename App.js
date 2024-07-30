@@ -35,11 +35,15 @@ export default function App() {
         <Tab.Screen name="Home" component={HomeScreen} options={{
           headerShown: false,
         }} />
-        <Tab.Screen name="Cart" component={CartScreen}options={{
+        <Tab.Screen name="Cart" component={CartScreen} options={{
           headerShown: false,
         }} />
-        <Tab.Screen name="Inbox" component={InboxScreen} />
-        <Tab.Screen name="Profile" component={ProfileScreen} />
+        <Tab.Screen name="Inbox" component={InboxScreen} options={{
+          headerShown: false,
+        }} />
+        <Tab.Screen name="Profile" component={ProfileScreen} options={{
+          headerShown: false,
+        }} />
       </Tab.Navigator>
     </NavigationContainer>
   );
